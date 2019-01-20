@@ -92,16 +92,18 @@ void* consumer(void* param)
 	  for(i=0;i<=20;i++)
 	  {
                   pthread_mutex_lock(&m);//using mutex to lock the buffer to enter the value inside the buffer
+		  // check for underflow condition
 		  if (num < 0) {
 			  exit(1); 
-			  } /* underflow */
+			  } 
+		  // wait till the buffer get inserted
 		  while (num==0)
 		  {
 			  pthread_cond_wait(&c_cons,&m);
 
 		}
+		// remove an element from buffer
 		rem=(rem+1)%BUFF_SIZE;
-		//i=arr[rem];
 		num--;
    
                   pthread_mutex_unlock(&m);// after inserting an element, now we can unlock the buffer
