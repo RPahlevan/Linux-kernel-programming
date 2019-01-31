@@ -1,3 +1,7 @@
+/*this program is created for POSIX*/
+/*this program is write for reader/writer application with given a priority to reader*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
