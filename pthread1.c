@@ -1,3 +1,10 @@
+/*This program is written by Ramin Pahlevannejad*/
+/*Producer-Cosumer example*/
+
+/*This is a multi thread programming using Linux-Kernel pthread*/
+/*Threads are synchronised using mutex*/
+/*A circular array is used for the buffer*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
