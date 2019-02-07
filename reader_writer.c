@@ -1,6 +1,8 @@
-/*this program is created for POSIX*/
-/*this program is write for reader/writer application with given a priority to reader*/
+/*This program is written by Ramin Pahlevannejad*/
 
+/*This program is created for POSIX*/
+/*This program is write for readers/writers application with given a priority to reader*/
+/*Multithread programming on Linux kernel*/
 
 #include <stdio.h>
 #include <stdlib.h>
